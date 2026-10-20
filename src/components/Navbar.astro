@@ -7,18 +7,15 @@ const { nav } = siteContent;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
     
     <!-- Logo & Isotype -->
-    <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0052FF] rounded-lg">
-      <div class="relative w-10 h-10 rounded-xl bg-[#0d1527] border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-[#00F0FF]/50 group-hover:shadow-[0_0_20px_rgba(0,240,255,0.25)]">
-        <svg class="w-6 h-6 text-[#0052FF] transition-transform duration-300 group-hover:scale-105" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M7 8a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H11a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4" />
-        </svg>
-        <span class="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-[#00F0FF] shadow-[0_0_8px_#00F0FF]"></span>
-      </div>
-      <div class="flex items-baseline font-bold text-xl tracking-tight text-white font-mono-code">
-        <span>{nav.brand.prefix}</span>
-        <span class="text-[#00F0FF] underline decoration-[#0052FF] decoration-2 underline-offset-4">{nav.brand.accent}</span>
-        <span>{nav.brand.suffix}</span>
-      </div>
+    <a href="#" class="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0052FF] rounded-lg">
+      <img 
+        src={nav.brand.logoWebp || nav.brand.logo} 
+        alt={nav.brand.name} 
+        class="h-9 sm:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+        width="140"
+        height="45"
+        loading="eager"
+      />
     </a>
 
     <!-- Desktop Navigation Links -->

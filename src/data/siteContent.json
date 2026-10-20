@@ -4,12 +4,24 @@
     "description": "Desarrollamos páginas web de ultra alta velocidad construidas en código limpio e integradas con agentes de Inteligencia Artificial que captan, califican y convierten visitantes en clientes en tiempo real.",
     "ogImage": "/og-image.png"
   },
+  "brand": {
+    "name": "synqo.dev",
+    "logo": "/branding/logo-512w.png",
+    "logoWebp": "/branding/logo.webp",
+    "isotipo": "/branding/isotipo-256w.png",
+    "isotipoWebp": "/branding/isotipo.webp",
+    "alt": "synqo.dev - Estudio de Ingeniería Web & Conversión"
+  },
   "nav": {
     "brand": {
       "name": "synqo.dev",
       "prefix": "syn",
       "accent": "q",
-      "suffix": "o.dev"
+      "suffix": "o.dev",
+      "logo": "/branding/logo-512w.png",
+      "logoWebp": "/branding/logo.webp",
+      "isotipo": "/branding/isotipo-256w.png",
+      "isotipoWebp": "/branding/isotipo.webp"
     },
     "links": [
       { "label": "Servicios", "href": "#servicios" },
@@ -266,7 +278,11 @@
       "name": "synqo.dev",
       "prefix": "syn",
       "accent": "q",
-      "suffix": "o.dev"
+      "suffix": "o.dev",
+      "logo": "/branding/logo-512w.png",
+      "logoWebp": "/branding/logo.webp",
+      "isotipo": "/branding/isotipo-256w.png",
+      "isotipoWebp": "/branding/isotipo.webp"
     },
     "tagline": "Syncing code, traffic and sales.",
     "copyright": "© Todos los derechos reservados. Hecho con ultra-velocidad en Astro.",

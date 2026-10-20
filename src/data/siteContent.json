@@ -36,7 +36,7 @@
     }
   },
   "hero": {
-    "eyebrow": "ESTUDIO DE INGENIERÍA WEB & CONVERSIÓN",
+    "eyebrow": "DESARROLLO WEB DE ALTO RENDIMIENTO + IA",
     "h1Prefix": "Tu mejor vendedor ahora",
     "h1Highlight": "opera en la web 24/7.",
     "subtitle": "Desarrollamos páginas web de ultra alta velocidad construidas en código limpio e integradas con agentes de Inteligencia Artificial que captan, califican y convierten visitantes en clientes en tiempo real.",
@@ -283,7 +283,7 @@
       "isotipoWebp": "/branding/isotipo.webp"
     },
     "tagline": "Syncing code, traffic and sales.",
-    "copyright": "© Todos los derechos reservados. Hecho con ultra-velocidad en Astro.",
+    "copyright": "© Todos los derechos reservados.",
     "links": [
       { "label": "Servicios", "href": "#servicios" },
       { "label": "Cómo funciona", "href": "#como-funciona" },

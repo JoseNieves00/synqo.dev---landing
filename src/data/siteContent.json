@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "title": "synqo.dev | Tu mejor vendedor ahora opera en la web 24/7",
+    "description": "Desarrollamos páginas web de ultra alta velocidad construidas en código limpio e integradas con agentes de Inteligencia Artificial que captan, califican y convierten visitantes en clientes en tiempo real.",
+    "ogImage": "/og-image.png"
+  },
+  "nav": {
+    "brand": {
+      "name": "synqo.dev",
+      "prefix": "syn",
+      "accent": "q",
+      "suffix": "o.dev"
+    },
+    "links": [
+      { "label": "Servicios", "href": "#servicios" },
+      { "label": "Cómo funciona", "href": "#como-funciona" },
+      { "label": "Stack & Rendimiento", "href": "#comparativa" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "statusBadge": "SISTEMA: ONLINE 24/7",
+    "cta": {
+      "label": "Agendar Diagnóstico",
+      "href": "#diagnostico"
+    }
+  },
+  "hero": {
+    "eyebrow": "ESTUDIO DE INGENIERÍA WEB & CONVERSIÓN",
+    "h1Prefix": "Tu mejor vendedor ahora",
+    "h1Highlight": "opera en la web 24/7.",
+    "subtitle": "Desarrollamos páginas web de ultra alta velocidad construidas en código limpio e integradas con agentes de Inteligencia Artificial que captan, califican y convierten visitantes en clientes en tiempo real.",
+    "primaryCta": {
+      "label": "Cotizar mi proyecto",
+      "href": "#diagnostico"
+    },
+    "secondaryCta": {
+      "label": "Ver demo del sistema",
+      "href": "#como-funciona"
+    },
+    "performanceBadge": [
+      { "icon": "⚡", "text": "Carga en < 0.8s" },
+      { "icon": "🎯", "text": "Arquitectura Zero-Friction" },
+      { "icon": "🤖", "text": "IA Nativa" }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "EL CAMBIO DE PARADIGMA",
+    "title": "La web tradicional quedó obsoleta.",
+    "subtitle": "La mayoría de empresas pierden hasta el 70% de su tráfico por fricciones técnicas y demoras en atención.",
+    "traditionalHeader": "El Modelo Tradicional (Otras Agencias)",
+    "synqoHeader": "El Estándar Synqo (synqo.dev)",
+    "points": [
+      {
+        "traditional": {
+          "title": "Plantillas lentas",
+          "desc": "Sitios pesados que tardan más de 3 segundos en cargar (el 53% de los usuarios se va antes)."
+        },
+        "synqo": {
+          "title": "Código limpio y optimizado",
+          "desc": "Carga instantánea en cualquier red o dispositivo móvil con Core Web Vitals en 100/100."
+        }
+      },
+      {
+        "traditional": {
+          "title": "Páginas folleto estáticas",
+          "desc": "Llenas de texto que nadie lee, sin una ruta clara hacia la acción ni psicología de conversión."
+        },
+        "synqo": {
+          "title": "Arquitectura de conversión (UI/UX)",
+          "desc": "Estructura diseñada psicológicamente para retener y guiar al usuario directo a contactar."
+        }
+      },
+      {
+        "traditional": {
+          "title": "Formularios abandonados",
+          "desc": "El prospecto llena sus datos y espera horas o días a que alguien del equipo responda."
+        },
+        "synqo": {
+          "title": "Atención en tiempo real",
+          "desc": "Agentes inteligentes que interactúan en milisegundos, resuelven dudas y agendan la cita de inmediato."
+        }
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "SHOW, DON'T TELL",
+    "title": "Así opera tu sistema de conversión continuo.",
+    "subtitle": "Un flujo perfectamente sincronizado desde el primer clic hasta la cita agendada en tu calendario.",
+    "steps": [
+      {
+        "id": "impacto",
+        "step": "01",
+        "title": "El Impacto (0.8s)",
+        "badge": "ULTRA-VELOCIDAD",
+        "copy": "El usuario hace clic en tu anuncio y entra sin esperas. Cero rebote.",
+        "details": "Optimizamos el Largest Contentful Paint (LCP) al extremo eliminando código no utilizado y sirviendo assets optimizados.",
+        "metricValue": "< 0.8s",
+        "metricLabel": "Tiempo de carga LCP",
+        "previewType": "speed"
+      },
+      {
+        "id": "conversacion",
+        "step": "02",
+        "title": "La Conversación (0.2s de respuesta)",
+        "badge": "AGENTE IA 24/7",
+        "copy": "Tu agente entrenado responde al instante, resuelve dudas específicas con la información de tu negocio y supera objeciones.",
+        "details": "Modelos LLM con memoria contextual entrenados con tus manuales de ventas, preguntas frecuentes y catálogos.",
+        "chat": {
+          "userQuery": "¿Tienen disponibilidad este jueves y qué precio tiene la consulta?",
+          "agentResponse": "¡Hola! Sí, este jueves tenemos cupo a las 11:00 AM y 4:30 PM. La sesión de diagnóstico especializado incluye auditoría completa por $45 USD. ¿Te aparto el cupo de las 11:00 AM?",
+          "responseTime": "0.2s de respuesta"
+        },
+        "previewType": "chat"
+      },
+      {
+        "id": "cierre",
+        "step": "03",
+        "title": "El Cierre Automático",
+        "badge": "CONVERSIÓN DIRECTA",
+        "copy": "El prospecto queda registrado en tu base de datos y la cita agendada sin que hayas tenido que mover un dedo.",
+        "details": "Integración nativa con Google Calendar, Cal.com, WhatsApp Business API y tu CRM favorito.",
+        "notification": {
+          "title": "¡Nuevo Lead Calificado Agendado!",
+          "channel": "Google Calendar & WhatsApp CRM",
+          "contact": "Carlos Mendoza — Clínica Estética Élite",
+          "meeting": "Jueves 11:00 AM · Sesión de Diagnóstico",
+          "status": "Confirmado automáticamente"
+        },
+        "previewType": "booking"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "PROPUESTA DE VALOR",
+    "title": "Soluciones de ingeniería para negocios en crecimiento.",
+    "subtitle": "Construimos herramientas digitales de alto calibre diseñadas para generar ingresos predecibles.",
+    "items": [
+      {
+        "id": "web-landings",
+        "name": "Synqo Web & Landings",
+        "tag": "ALTO RENDIMIENTO",
+        "featured": false,
+        "description": "Interfaces a medida desarrolladas sin plantillas sobrecargadas. Optimizadas para velocidad extrema, mobile-first y estructuras de copy orientadas a la venta directa.",
+        "includes": [
+          "Diseño UI/UX en Figma a medida",
+          "Desarrollo en stack moderno (Astro / Tailwind)",
+          "Optimización Core Web Vitals 100/100",
+          "Copywriting persuasivo y arquitectura de conversión",
+          "Tracking analítico y pixel de pauta configurado"
+        ],
+        "cta": "Quiero mi Landing"
+      },
+      {
+        "id": "synqo-core",
+        "name": "Synqo Core (El Sistema Completo)",
+        "tag": "RECOMENDADO / MÁXIMO ROI",
+        "featured": true,
+        "description": "La máquina completa de captación: Landing page de alto impacto + Agente de IA configurado nativamente + automatizaciones de seguimiento.",
+        "includes": [
+          "Todo lo incluido en Synqo Web & Landings",
+          "Todo lo incluido en Synqo AI Agents",
+          "Sincronización total lista para tráfico de pauta o redes sociales",
+          "Integración con Google Calendar, CRM y Webhooks",
+          "Monitoreo de uptime y soporte prioritario"
+        ],
+        "cta": "Implementar Synqo Core"
+      },
+      {
+        "id": "ai-agents",
+        "name": "Synqo AI Agents",
+        "tag": "ATENCIÓN 24/7",
+        "featured": false,
+        "description": "Asistentes conversacionales con IA entrenados con la base de conocimiento de tu empresa. Atienden objeciones, filtran prospectos que no califican y capturan datos clave.",
+        "includes": [
+          "Entrenamiento contextual con tus documentos y FAQs",
+          "Integración web y WhatsApp Business",
+          "Calificación algorítmica de leads",
+          "Conexión con Google Calendar / CRM",
+          "Dashboard de métricas de conversación"
+        ],
+        "cta": "Implementar Agente IA"
+      }
+    ]
+  },
+  "niches": {
+    "eyebrow": "CASOS DE USO",
+    "title": "Diseñado para industrias donde el tiempo de respuesta define la venta.",
+    "subtitle": "Si tu cliente necesita respuestas claras para tomar una decisión de compra, este sistema multiplica tus conversiones.",
+    "items": [
+      {
+        "industry": "Salud y Estética",
+        "examples": "Clínicas odontológicas, dermatológicas y medicina especializada",
+        "action": "Agendamiento de citas 24/7",
+        "metric": "85% menos inasistencias",
+        "icon": "heart"
+      },
+      {
+        "industry": "Servicios Profesionales",
+        "examples": "Despachos legales, consultores, bienes raíces y finanzas",
+        "action": "Calificación de prospectos de ticket alto",
+        "metric": "Filtro 100% automático",
+        "icon": "briefcase"
+      },
+      {
+        "industry": "Empresas de Servicios Locales",
+        "examples": "Instalaciones, remodelaciones, arquitectura y eventos",
+        "action": "Cotizaciones rápidas y filtrado de clientes",
+        "metric": "Respuesta en < 1 segundo",
+        "icon": "wrench"
+      },
+      {
+        "industry": "Comercio Consultivo",
+        "examples": "Productos de ticket medio/alto que requieren explicación antes de comprar",
+        "action": "Resolución de objeciones y cierre",
+        "metric": "+3.4x tasa de conversión",
+        "icon": "shopping"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "RESOLVIENDO DUDAS",
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre nuestra arquitectura, entregables y metodología de trabajo.",
+    "items": [
+      {
+        "q": "¿Por qué una landing en lugar de un sitio web tradicional de 5 páginas?",
+        "a": "Un sitio web institucional distrae al visitante con menús infinitos y poca claridad. Una landing page elimina las distracciones y enfoca el 100% de la atención en guiar al prospecto hacia una sola acción rentable (contactar o agendar), elevando radicalmente el retorno de tu tráfico."
+      },
+      {
+        "q": "¿El chatbot de IA suena robótico como los menús antiguos?",
+        "a": "No. No usamos árboles de decisiones rígidos con opciones tipo 'marque 1 para precios'. Implementamos modelos de lenguaje avanzados entrenados específicamente con las respuestas, tono, lenguaje y políticas de tu negocio, logrando un trato fluido, empático y profesional."
+      },
+      {
+        "q": "¿En cuánto tiempo queda listo el sistema?",
+        "a": "Un despliegue típico de Synqo (Landing optimizada + Agente entrenado e integraciones) se entrega y prueba en un plazo de 7 a 14 días hábiles, garantizando pruebas rigurosas antes del lanzamiento."
+      },
+      {
+        "q": "¿Qué necesito para empezar?",
+        "a": "Solo la información básica de tus servicios, precios y preguntas frecuentes. Nosotros nos encargamos de toda la arquitectura técnica, el código limpio, el diseño UI/UX y el entrenamiento del asistente inteligente."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "DA EL SIGUIENTE PASO",
+    "h2": "Sincroniza tu negocio hoy.",
+    "subtitle": "Deja de perder prospectos por demoras o páginas lentas. Cuéntanos sobre tu negocio y diseñemos tu sistema de conversión.",
+    "whatsappNumber": "573000000000",
+    "calendarUrl": "https://calendly.com",
+    "fields": {
+      "name": "Nombre / Empresa",
+      "namePlaceholder": "Ej. Dr. Andrés Gómez / Clínica Dental Sonreír",
+      "contact": "WhatsApp o Correo",
+      "contactPlaceholder": "Ej. +57 310 000 0000 o andres@empresa.com",
+      "details": "¿A qué se dedica tu negocio y qué te gustaría automatizar?",
+      "detailsPlaceholder": "Ej. Somos una clínica dental. Queremos captar pacientes de implantes y que el agente de IA agende las citas en Google Calendar automáticamente."
+    },
+    "submitLabel": "Solicitar Diagnóstico y Agendar",
+    "success": {
+      "title": "¡Información enviada con éxito!",
+      "subtitle": "Tu solicitud ha sido registrada y tu agente está listo. Para garantizar que atendamos los proyectos adecuados, ahora puedes reservar directamente tu sesión de diagnóstico de 20 minutos.",
+      "calendarBtnLabel": "Elegir Día y Hora en Agenda",
+      "whatsappBtnLabel": "Confirmar por WhatsApp ahora"
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "synqo.dev",
+      "prefix": "syn",
+      "accent": "q",
+      "suffix": "o.dev"
+    },
+    "tagline": "Syncing code, traffic and sales.",
+    "copyright": "© Todos los derechos reservados. Hecho con ultra-velocidad en Astro.",
+    "links": [
+      { "label": "Servicios", "href": "#servicios" },
+      { "label": "Cómo funciona", "href": "#como-funciona" },
+      { "label": "Stack & Rendimiento", "href": "#comparativa" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Diagnóstico", "href": "#diagnostico" }
+    ]
+  }
+}

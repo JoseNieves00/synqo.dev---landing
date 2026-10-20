@@ -1,0 +1,141 @@
+---
+import siteContent from '../data/siteContent.json';
+const { nav } = siteContent;
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#060913]/80 border-b border-white/[0.07] transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    
+    <!-- Logo & Isotype -->
+    <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0052FF] rounded-lg">
+      <div class="relative w-10 h-10 rounded-xl bg-[#0d1527] border border-white/10 flex items-center justify-center overflow-hidden transition-all duration-300 group-hover:border-[#00F0FF]/50 group-hover:shadow-[0_0_20px_rgba(0,240,255,0.25)]">
+        <svg class="w-6 h-6 text-[#0052FF] transition-transform duration-300 group-hover:scale-105" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 8a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H11a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4" />
+        </svg>
+        <span class="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-[#00F0FF] shadow-[0_0_8px_#00F0FF]"></span>
+      </div>
+      <div class="flex items-baseline font-bold text-xl tracking-tight text-white font-mono-code">
+        <span>{nav.brand.prefix}</span>
+        <span class="text-[#00F0FF] underline decoration-[#0052FF] decoration-2 underline-offset-4">{nav.brand.accent}</span>
+        <span>{nav.brand.suffix}</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-8">
+      {nav.links.map((link) => (
+        <a 
+          href={link.href} 
+          class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 relative group py-1"
+        >
+          {link.label}
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#0052FF] to-[#00F0FF] transition-all duration-300 group-hover:w-full rounded-full"></span>
+        </a>
+      ))}
+    </nav>
+
+    <!-- Right Controls: Status Badge + CTA Button -->
+    <div class="hidden lg:flex items-center gap-4">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0a1224] border border-[#10B981]/25 text-[11px] font-mono-code text-slate-300 tracking-wider">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-[#10B981] shadow-[0_0_8px_#10B981]"></span>
+        </span>
+        <span class="font-semibold text-white/90">{nav.statusBadge}</span>
+      </div>
+
+      <!-- Action Button -->
+      <a 
+        href={nav.cta.href} 
+        class="inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold text-white bg-[#0052FF] hover:bg-[#0041cb] transition-all duration-200 shadow-[0_0_20px_rgba(0,82,255,0.35)] hover:shadow-[0_0_25px_rgba(0,82,255,0.6)] hover:-translate-y-0.5 cursor-pointer"
+      >
+        <span>{nav.cta.label}</span>
+        <svg class="w-4 h-4 ml-1.5 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <div class="flex items-center gap-2 md:hidden">
+      <!-- Mobile Online Status Dot -->
+      <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#0a1224] border border-[#10B981]/25 text-[10px] font-mono-code text-slate-300">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#10B981] shadow-[0_0_6px_#10B981]"></span>
+        <span>ONLINE</span>
+      </div>
+
+      <button 
+        id="mobile-menu-toggle"
+        type="button" 
+        class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-[#0052FF]"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+      >
+        <svg id="hamburger-icon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div id="mobile-menu" class="hidden md:hidden border-b border-white/[0.08] bg-[#060913]/95 backdrop-blur-xl px-5 pt-3 pb-6 transition-all duration-300">
+    <div class="flex flex-col space-y-3 pt-2">
+      {nav.links.map((link) => (
+        <a 
+          href={link.href} 
+          class="mobile-nav-link text-base font-medium text-slate-300 hover:text-[#00F0FF] py-2 border-b border-white/[0.04] transition-colors"
+        >
+          {link.label}
+        </a>
+      ))}
+      <div class="pt-4 flex flex-col gap-3">
+        <div class="flex items-center justify-between px-3 py-2 rounded-lg bg-[#0d1527] border border-white/5 text-xs font-mono-code text-slate-300">
+          <span class="text-slate-400">Estado del motor:</span>
+          <span class="flex items-center gap-1.5 text-[#10B981] font-semibold">
+            <span class="w-2 h-2 rounded-full bg-[#10B981] shadow-[0_0_6px_#10B981]"></span>
+            {nav.statusBadge}
+          </span>
+        </div>
+        <a 
+          href={nav.cta.href} 
+          class="mobile-nav-link w-full text-center py-3 rounded-xl text-sm font-semibold text-white bg-[#0052FF] hover:bg-[#0041cb] shadow-[0_0_20px_rgba(0,82,255,0.4)]"
+        >
+          {nav.cta.label}
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+  if (toggleBtn && mobileMenu && hamburgerIcon && closeIcon) {
+    toggleBtn.addEventListener('click', () => {
+      const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', String(!isExpanded));
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>

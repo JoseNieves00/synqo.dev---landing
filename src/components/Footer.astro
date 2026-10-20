@@ -1,0 +1,56 @@
+---
+import siteContent from '../data/siteContent.json';
+const { footer, nav } = siteContent;
+---
+
+<footer class="border-t border-white/[0.08] bg-[#060913] pt-14 pb-12 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-white/[0.06]">
+      
+      <!-- Logo & Tagline -->
+      <div class="flex flex-col items-center md:items-start gap-2">
+        <a href="#" class="flex items-center gap-2.5 font-bold text-xl text-white font-mono-code tracking-tight">
+          <div class="w-7 h-7 rounded-lg bg-[#0d1527] border border-white/10 flex items-center justify-center text-[#0052FF]">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M7 8a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H11a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4" />
+            </svg>
+          </div>
+          <span>{footer.brand.prefix}</span>
+          <span class="text-[#00F0FF]">{footer.brand.accent}</span>
+          <span>{footer.brand.suffix}</span>
+        </a>
+        <p class="text-xs sm:text-sm text-slate-400 font-mono-code">
+          {footer.tagline}
+        </p>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm text-slate-400">
+        {footer.links.map((link) => (
+          <a href={link.href} class="hover:text-[#00F0FF] transition-colors">
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Status Indicator -->
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0a1224] border border-[#10B981]/20 text-[11px] font-mono-code text-slate-300">
+        <span class="w-2 h-2 rounded-full bg-[#10B981] shadow-[0_0_8px_#10B981]"></span>
+        <span>{nav.statusBadge}</span>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+      <p>{footer.copyright}</p>
+      <div class="flex items-center gap-4">
+        <span>Astro + Tailwind CSS</span>
+        <span>·</span>
+        <span class="text-[#00F0FF]">synqo.dev</span>
+      </div>
+    </div>
+
+  </div>
+</footer>

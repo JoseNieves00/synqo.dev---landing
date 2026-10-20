@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Comparison from '../components/Comparison.astro';
+import InteractiveDemo from '../components/InteractiveDemo.astro';
+import Services from '../components/Services.astro';
+import Niches from '../components/Niches.astro';
+import Faq from '../components/Faq.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Footer from '../components/Footer.astro';
+import siteContent from '../data/siteContent.json';
+
+const { meta } = siteContent;
+---
+
+<Layout title={meta.title} description={meta.description}>
+  <Navbar />
+  <main>
+    <Hero />
+    <Comparison />
+    <InteractiveDemo />
+    <Services />
+    <Niches />
+    <Faq />
+    <ContactForm />
+  </main>
+  <Footer />
+</Layout>

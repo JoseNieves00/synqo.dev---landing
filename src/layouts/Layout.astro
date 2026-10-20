@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "synqo.dev | Tu mejor vendedor ahora opera en la web 24/7",
+  description = "Desarrollamos páginas web de ultra alta velocidad construidas en código limpio e integradas con agentes de Inteligencia Artificial que captan, califican y convierten visitantes en clientes en tiempo real."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth bg-[#060913]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#060913" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://synqo.dev/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://synqo.dev/" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    <!-- Preconnect to Google Fonts for lightning fast font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-[#060913] text-slate-100 antialiased selection:bg-[#0052FF] selection:text-white relative">
+    <!-- Subtle top glow -->
+    <div class="pointer-events-none fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[450px] bg-radial-gradient -z-10 opacity-70"></div>
+    
+    <!-- Background cyber grid overlay -->
+    <div class="pointer-events-none fixed inset-0 bg-grid-pattern opacity-60 -z-20"></div>
+
+    <slot />
+  </body>
+</html>

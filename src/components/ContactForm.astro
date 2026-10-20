@@ -1,0 +1,201 @@
+---
+import siteContent from '../data/siteContent.json';
+const { contact } = siteContent;
+---
+
+<section id="diagnostico" class="py-24 md:py-32 relative overflow-hidden">
+  
+  <!-- Ambient glow in background -->
+  <div class="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[850px] h-[500px] bg-[#0052FF]/15 rounded-full blur-[160px] -z-10"></div>
+  <div class="pointer-events-none absolute bottom-20 left-1/3 w-[400px] h-[300px] bg-[#00F0FF]/10 rounded-full blur-[130px] -z-10"></div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="rounded-3xl bg-[#090e1c]/90 border border-white/[0.12] p-8 sm:p-12 backdrop-blur-xl shadow-[0_0_60px_rgba(0,0,0,0.6)] relative overflow-hidden">
+      
+      <!-- Top Cyber Accent Line -->
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#0052FF] to-[#00F0FF]"></div>
+
+      <!-- Section Title & Copy -->
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a1224] border border-[#0052FF]/30 text-xs font-mono-code text-[#00F0FF] mb-4">
+          <span>●</span>
+          <span>{contact.eyebrow}</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
+          {contact.h2}
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+          {contact.subtitle}
+        </p>
+      </div>
+
+      <!-- Lead Capture Form (Initial State) -->
+      <form id="synqo-qualification-form" class="space-y-6 max-w-2xl mx-auto">
+        
+        <!-- Field 1: Nombre / Empresa -->
+        <div>
+          <label for="lead-name" class="block text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+            {contact.fields.name} <span class="text-[#00F0FF]">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="lead-name" 
+            name="name" 
+            required
+            placeholder={contact.fields.namePlaceholder}
+            class="w-full px-4 py-3.5 rounded-xl bg-[#060913] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#0052FF] focus:ring-1 focus:ring-[#0052FF] transition-all"
+          />
+        </div>
+
+        <!-- Field 2: WhatsApp o Correo -->
+        <div>
+          <label for="lead-contact" class="block text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+            {contact.fields.contact} <span class="text-[#00F0FF]">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="lead-contact" 
+            name="contact" 
+            required
+            placeholder={contact.fields.contactPlaceholder}
+            class="w-full px-4 py-3.5 rounded-xl bg-[#060913] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#0052FF] focus:ring-1 focus:ring-[#0052FF] transition-all"
+          />
+        </div>
+
+        <!-- Field 3: Detalles del negocio y automatización -->
+        <div>
+          <label for="lead-details" class="block text-xs sm:text-sm font-semibold text-slate-200 mb-2">
+            {contact.fields.details} <span class="text-[#00F0FF]">*</span>
+          </label>
+          <textarea 
+            id="lead-details" 
+            name="details" 
+            rows="3" 
+            required
+            placeholder={contact.fields.detailsPlaceholder}
+            class="w-full px-4 py-3.5 rounded-xl bg-[#060913] border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#0052FF] focus:ring-1 focus:ring-[#0052FF] transition-all resize-none"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button 
+            type="submit" 
+            id="submit-lead-btn"
+            class="w-full py-4 px-6 rounded-xl text-base font-bold text-white bg-[#0052FF] hover:bg-[#0041cb] shadow-[0_0_30px_rgba(0,82,255,0.4)] hover:shadow-[0_0_40px_rgba(0,82,255,0.6)] transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer group"
+          >
+            <span>{contact.submitLabel}</span>
+            <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </button>
+          
+          <div class="flex items-center justify-center gap-2 mt-4 text-xs font-mono-code text-slate-400">
+            <span class="text-[#10B981]">🔒</span>
+            <span>Tus datos son 100% confidenciales. Sin spam ni llamadas en frío.</span>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Unlocked Booking / Success View (Shown after form submission) -->
+      <div id="synqo-success-view" class="hidden text-center max-w-xl mx-auto py-6 space-y-6 animate-fadeIn">
+        
+        <div class="w-16 h-16 rounded-2xl bg-[#10B981]/15 border border-[#10B981]/30 mx-auto flex items-center justify-center text-[#10B981] text-3xl shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+          ✓
+        </div>
+
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+          {contact.success.title}
+        </h3>
+
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          {contact.success.subtitle}
+        </p>
+
+        <!-- Dynamic Action Buttons -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <!-- Calendar Booking Link -->
+          <a 
+            id="booking-calendar-link"
+            href={contact.calendarUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-bold text-white bg-[#0052FF] hover:bg-[#0041cb] shadow-[0_0_30px_rgba(0,82,255,0.5)] transition-all flex items-center justify-center gap-2"
+          >
+            <span>📅 {contact.success.calendarBtnLabel}</span>
+          </a>
+
+          <!-- WhatsApp Direct Link -->
+          <a 
+            id="booking-whatsapp-link"
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto px-6 py-4 rounded-xl text-sm font-semibold text-[#10B981] bg-[#10B981]/15 border border-[#10B981]/30 hover:bg-[#10B981]/25 transition-all flex items-center justify-center gap-2"
+          >
+            <span>💬 {contact.success.whatsappBtnLabel}</span>
+          </a>
+        </div>
+
+        <p class="text-xs font-mono-code text-slate-400 pt-2">
+          Te enviamos una copia a tu WhatsApp y nuestro equipo revisará tu caso en minutos.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script define:vars={{ whatsappNumber: contact.whatsappNumber, calendarUrl: contact.calendarUrl }}>
+  const form = document.getElementById('synqo-qualification-form');
+  const successView = document.getElementById('synqo-success-view');
+  const whatsappLink = document.getElementById('booking-whatsapp-link');
+
+  if (form && successView) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('lead-name');
+      const contactInput = document.getElementById('lead-contact');
+      const detailsInput = document.getElementById('lead-details');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const contactVal = contactInput ? contactInput.value.trim() : '';
+      const details = detailsInput ? detailsInput.value.trim() : '';
+
+      if (!name || !contactVal || !details) {
+        alert('Por favor completa todos los campos requeridos.');
+        return;
+      }
+
+      // Format WhatsApp pre-structured message
+      const message = `*Nuevo Diagnóstico Solicitado - synqo.dev*\n\n` +
+        `👤 *Nombre / Empresa:* ${name}\n` +
+        `📱 *Contacto:* ${contactVal}\n` +
+        `🎯 *Giro y Objetivo:* ${details}\n\n` +
+        `_Enviado desde formulario de conversión en synqo.dev_`;
+
+      const encodedMessage = encodeURIComponent(message);
+      const waUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+      // Set link in success view
+      if (whatsappLink) {
+        whatsappLink.setAttribute('href', waUrl);
+      }
+
+      // Open WhatsApp in new tab for instant transmission
+      window.open(waUrl, '_blank');
+
+      // Smoothly switch form to Success / Calendar Booking state
+      form.classList.add('hidden');
+      successView.classList.remove('hidden');
+
+      // Scroll smoothly to success view
+      successView.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  }
+</script>

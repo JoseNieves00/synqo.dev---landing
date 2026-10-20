@@ -1,0 +1,319 @@
+---
+import siteContent from '../data/siteContent.json';
+const { demo } = siteContent;
+---
+
+<section id="como-funciona" class="py-20 md:py-28 relative overflow-hidden bg-[#090e1c]/40 border-y border-white/[0.05]">
+  
+  <!-- Subtle ambient glow -->
+  <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#0052FF]/10 rounded-full blur-[140px] -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a1224] border border-[#0052FF]/30 text-xs font-mono-code text-[#00F0FF] mb-4">
+        <span>⚡</span>
+        <span>{demo.eyebrow}</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
+        {demo.title}
+      </h2>
+      <p class="text-base sm:text-lg text-slate-300/90 leading-relaxed">
+        {demo.subtitle}
+      </p>
+    </div>
+
+    <!-- Step Selector Tabs (Desktop & Mobile) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+      {demo.steps.map((st, index) => (
+        <button
+          type="button"
+          data-step-target={index}
+          class={`step-tab-btn text-left p-5 rounded-2xl border transition-all duration-300 relative overflow-hidden cursor-pointer ${
+            index === 0 
+              ? 'bg-[#0d1527] border-[#00F0FF]/50 shadow-[0_0_25px_rgba(0,240,255,0.15)] active-tab' 
+              : 'bg-[#090e1c]/70 border-white/[0.06] hover:border-white/20'
+          }`}
+        >
+          <div class="flex items-center justify-between mb-3">
+            <span class="step-badge text-xs font-mono-code px-2.5 py-1 rounded-md bg-[#0052FF]/20 text-[#00F0FF] border border-[#00F0FF]/30 font-semibold">
+              PASO {st.step}
+            </span>
+            <span class="text-xs font-mono-code text-slate-400">{st.badge}</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-1.5">{st.title}</h3>
+          <p class="text-xs sm:text-sm text-slate-400 line-clamp-2 leading-relaxed">{st.copy}</p>
+          <!-- Active highlight indicator bar -->
+          <div class="active-indicator absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0052FF] to-[#00F0FF] transition-opacity duration-300 opacity-100"></div>
+        </button>
+      ))}
+    </div>
+
+    <!-- Interactive Interactive Preview Stage -->
+    <div class="rounded-3xl bg-[#060913] border border-white/[0.1] p-6 sm:p-10 relative overflow-hidden shadow-2xl">
+      
+      <!-- Stage 1: El Impacto (0.8s) -->
+      <div id="step-panel-0" class="step-panel flex flex-col lg:flex-row items-center gap-10">
+        <div class="w-full lg:w-1/2 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10B981]/10 border border-[#10B981]/30 text-xs font-mono-code text-[#10B981]">
+            <span>●</span>
+            <span>VELOCIDAD CORE WEB VITALS 100/100</span>
+          </div>
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+            El primer clic lo define todo. Carga en 0.8s sin fricción.
+          </h3>
+          <p class="text-base text-slate-300 leading-relaxed">
+            {demo.steps[0].copy}
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            {demo.steps[0].details}
+          </p>
+          <div class="pt-4 flex items-center gap-6">
+            <div class="p-4 rounded-xl bg-[#0d1527] border border-white/10 text-center">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-[#10B981] font-mono-code">&lt; 0.8s</span>
+              <span class="text-xs text-slate-400">Largest Contentful Paint</span>
+            </div>
+            <div class="p-4 rounded-xl bg-[#0d1527] border border-white/10 text-center">
+              <span class="block text-2xl sm:text-3xl font-extrabold text-[#00F0FF] font-mono-code">0.00</span>
+              <span class="text-xs text-slate-400">Cumulative Layout Shift</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Mockup: Ultra Fast Mobile Preview -->
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <div class="w-full max-w-sm rounded-[32px] bg-[#0c1222] border-4 border-slate-800 p-4 shadow-[0_0_50px_rgba(0,82,255,0.25)] relative">
+            <!-- Mobile top bar -->
+            <div class="flex items-center justify-between px-3 py-2 border-b border-white/[0.08] mb-4">
+              <span class="text-[11px] font-mono-code text-slate-400">9:41</span>
+              <div class="w-16 h-3.5 bg-slate-900 rounded-full"></div>
+              <div class="flex items-center gap-1">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#10B981]"></span>
+                <span class="text-[10px] font-mono-code text-[#10B981]">5G · 100%</span>
+              </div>
+            </div>
+            <!-- Browser URL bar -->
+            <div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-[#060913] border border-white/10 mb-4 text-xs font-mono-code text-slate-300">
+              <span class="text-[#10B981]">🔒</span>
+              <span class="text-slate-400">https://</span>
+              <span class="text-white font-semibold">synqo.dev</span>
+              <span class="ml-auto text-[10px] text-[#10B981] bg-[#10B981]/20 px-1.5 py-0.5 rounded">0.78s</span>
+            </div>
+            <!-- Landing Mobile Preview Content -->
+            <div class="space-y-3 rounded-2xl bg-[#090e1c] p-4 border border-white/5">
+              <div class="h-4 w-28 bg-[#0052FF]/30 rounded-md"></div>
+              <div class="h-6 w-4/5 bg-gradient-to-r from-white to-slate-400 rounded-md"></div>
+              <div class="h-3 w-full bg-slate-700/40 rounded-md"></div>
+              <div class="h-3 w-2/3 bg-slate-700/40 rounded-md"></div>
+              <div class="pt-2">
+                <div class="h-9 w-full bg-[#0052FF] rounded-xl flex items-center justify-center text-xs font-bold text-white shadow-[0_0_15px_rgba(0,82,255,0.5)]">
+                  Cotizar Proyecto Ahora
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 p-2.5 rounded-xl bg-[#10B981]/10 border border-[#10B981]/20 flex items-center gap-2 text-xs font-mono-code text-[#10B981]">
+              <span>⚡</span>
+              <span>Página lista e interactiva en 780ms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 2: La Conversación (0.2s) -->
+      <div id="step-panel-1" class="step-panel hidden flex flex-col lg:flex-row items-center gap-10">
+        <div class="w-full lg:w-1/2 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00F0FF]/10 border border-[#00F0FF]/30 text-xs font-mono-code text-[#00F0FF]">
+            <span>●</span>
+            <span>AGENTE CONVERSACIONAL ENTRENADO</span>
+          </div>
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+            Tu agente resuelve dudas, califica y convence en tiempo real.
+          </h3>
+          <p class="text-base text-slate-300 leading-relaxed">
+            {demo.steps[1].copy}
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            {demo.steps[1].details}
+          </p>
+          <div class="p-4 rounded-xl bg-[#0d1527] border border-white/10 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#0052FF]/20 border border-[#0052FF]/40 flex items-center justify-center text-[#00F0FF] font-bold">
+              ⚡
+            </div>
+            <div>
+              <span class="block text-sm font-bold text-white">Latencia de respuesta ultra-baja</span>
+              <span class="text-xs text-slate-400">Respuesta procesada y redactada en menos de 200ms.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Mockup: Modern AI Chat Widget Preview -->
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <div class="w-full max-w-md rounded-2xl bg-[#0c1322] border border-white/[0.12] p-5 shadow-[0_0_50px_rgba(0,240,255,0.15)] space-y-4">
+            <!-- Chat Widget Header -->
+            <div class="flex items-center justify-between pb-3 border-b border-white/[0.08]">
+              <div class="flex items-center gap-3">
+                <div class="relative w-8 h-8 rounded-full bg-[#0052FF] flex items-center justify-center text-white font-bold text-xs shadow-[0_0_10px_#0052FF]">
+                  AI
+                  <span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-[#10B981] ring-2 ring-[#0c1322]"></span>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Synqo Assistant 24/7</h4>
+                  <p class="text-[11px] text-[#00F0FF] font-mono-code">En línea · Responde al instante</p>
+                </div>
+              </div>
+              <span class="text-xs font-mono-code text-slate-400 bg-white/5 px-2 py-0.5 rounded">0.2s</span>
+            </div>
+
+            <!-- Chat Messages Container -->
+            <div class="space-y-3 text-xs sm:text-sm">
+              <!-- Visitor Message -->
+              <div class="flex items-start justify-end gap-2">
+                <div class="max-w-[85%] rounded-2xl rounded-tr-sm bg-[#0052FF] text-white p-3.5 shadow-md">
+                  <p>{demo.steps[1].chat?.userQuery}</p>
+                  <span class="block text-[10px] text-white/70 text-right mt-1 font-mono-code">10:42 AM</span>
+                </div>
+              </div>
+
+              <!-- AI Agent Response -->
+              <div class="flex items-start gap-2.5">
+                <div class="w-7 h-7 rounded-full bg-[#090e1c] border border-[#00F0FF]/30 flex-shrink-0 flex items-center justify-center text-xs text-[#00F0FF] font-bold">
+                  🤖
+                </div>
+                <div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-[#090e1c] border border-white/[0.08] text-slate-200 p-3.5 leading-relaxed shadow-sm">
+                  <p>{demo.steps[1].chat?.agentResponse}</p>
+                  <div class="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between text-[10px] text-slate-400 font-mono-code">
+                    <span class="text-[#10B981]">✓ Lead calificado</span>
+                    <span>10:42 AM (0.2s)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Quick Actions -->
+            <div class="pt-2 flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-[#0052FF]/20 text-[#00F0FF] border border-[#00F0FF]/30 text-xs font-semibold">
+                📅 Sí, apartar 11:00 AM
+              </span>
+              <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs hover:bg-white/10 cursor-pointer">
+                Ver otros horarios
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 3: El Cierre Automático -->
+      <div id="step-panel-2" class="step-panel hidden flex flex-col lg:flex-row items-center gap-10">
+        <div class="w-full lg:w-1/2 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0052FF]/20 border border-[#0052FF]/40 text-xs font-mono-code text-[#00F0FF]">
+            <span>●</span>
+            <span>SINCRONIZACIÓN AUTOMÁTICA</span>
+          </div>
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+            La cita queda en tu calendario sin mover un dedo.
+          </h3>
+          <p class="text-base text-slate-300 leading-relaxed">
+            {demo.steps[2].copy}
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            {demo.steps[2].details}
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <span class="px-3 py-1.5 rounded-lg bg-[#0d1527] border border-white/10 text-xs font-mono-code text-slate-300 flex items-center gap-2">
+              <span class="text-[#00F0FF]">✔</span> Google Calendar
+            </span>
+            <span class="px-3 py-1.5 rounded-lg bg-[#0d1527] border border-white/10 text-xs font-mono-code text-slate-300 flex items-center gap-2">
+              <span class="text-[#10B981]">✔</span> WhatsApp CRM
+            </span>
+            <span class="px-3 py-1.5 rounded-lg bg-[#0d1527] border border-white/10 text-xs font-mono-code text-slate-300 flex items-center gap-2">
+              <span class="text-[#0052FF]">✔</span> Webhook / Supabase
+            </span>
+          </div>
+        </div>
+
+        <!-- Visual Mockup: Lead Notification Card -->
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <div class="w-full max-w-md rounded-2xl bg-[#0c1322] border-2 border-[#10B981]/40 p-6 shadow-[0_0_50px_rgba(16,185,129,0.2)] space-y-5">
+            <!-- Notification Header -->
+            <div class="flex items-center justify-between pb-3 border-b border-white/[0.08]">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-[#10B981]/15 border border-[#10B981]/30 flex items-center justify-center text-[#10B981] text-lg font-bold">
+                  🔔
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-white">{demo.steps[2].notification?.title}</h4>
+                  <p class="text-xs text-[#10B981] font-mono-code">{demo.steps[2].notification?.channel}</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-mono-code text-slate-400">Ahora</span>
+            </div>
+
+            <!-- Booking Details Body -->
+            <div class="space-y-3 rounded-xl bg-[#060913] p-4 border border-white/[0.06] text-xs sm:text-sm">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Prospecto:</span>
+                <span class="text-white font-semibold">{demo.steps[2].notification?.contact}</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Reunión agendada:</span>
+                <span class="text-[#00F0FF] font-semibold">{demo.steps[2].notification?.meeting}</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Estado del lead:</span>
+                <span class="text-[#10B981] font-semibold flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-[#10B981]"></span>
+                  {demo.steps[2].notification?.status}
+                </span>
+              </div>
+            </div>
+
+            <!-- Action buttons simulation -->
+            <div class="flex items-center gap-3 pt-1">
+              <div class="w-full py-2.5 rounded-xl bg-[#0052FF] text-center text-xs font-bold text-white shadow-md">
+                Ver en Google Calendar
+              </div>
+              <div class="w-full py-2.5 rounded-xl bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/30 text-center text-xs font-bold">
+                Abrir WhatsApp Lead
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const stepButtons = document.querySelectorAll('.step-tab-btn');
+  const stepPanels = document.querySelectorAll('.step-panel');
+
+  stepButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      // Deactivate all buttons
+      stepButtons.forEach((b) => {
+        b.classList.remove('bg-[#0d1527]', 'border-[#00F0FF]/50', 'shadow-[0_0_25px_rgba(0,240,255,0.15)]', 'active-tab');
+        b.classList.add('bg-[#090e1c]/70', 'border-white/[0.06]');
+        const indicator = b.querySelector('.active-indicator');
+        if (indicator) indicator.classList.add('opacity-0');
+      });
+
+      // Activate clicked button
+      btn.classList.add('bg-[#0d1527]', 'border-[#00F0FF]/50', 'shadow-[0_0_25px_rgba(0,240,255,0.15)]', 'active-tab');
+      btn.classList.remove('bg-[#090e1c]/70', 'border-white/[0.06]');
+      const activeIndicator = btn.querySelector('.active-indicator');
+      if (activeIndicator) activeIndicator.classList.remove('opacity-0');
+
+      // Hide all panels, show target panel
+      stepPanels.forEach((panel, pIndex) => {
+        if (pIndex === index) {
+          panel.classList.remove('hidden');
+        } else {
+          panel.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>

@@ -27,9 +27,8 @@
     },
     "links": [
       { "label": "La Empresa", "href": "#empresa" },
-      { "label": "Ecosistema CRM", "href": "#crm-ecosistema" },
-      { "label": "Soluciones", "href": "#servicios" },
       { "label": "Cómo funciona", "href": "#como-funciona" },
+      { "label": "Soluciones", "href": "#servicios" },
       { "label": "FAQ", "href": "#faq" }
     ],
     "statusBadge": "STATUS: 24/7 ACTIVE",
@@ -93,29 +92,6 @@
       { "value": "100%", "label": "Propiedad del Cliente", "desc": "Dominio, base de datos y código" },
       { "value": "WABA", "label": "API Oficial Meta", "desc": "Línea institucional sin riesgo de baneo" },
       { "value": "24/7", "label": "Disponibilidad Activa", "desc": "Atención comercial continua" }
-    ]
-  },
-  "crmFeature": {
-    "eyebrow": "TECNOLOGÍA PROPIETARIA · SOFTWARE CRM + IA",
-    "title": "Un CRM diseñado para que ningún lead se quede sin respuesta.",
-    "subtitle": "Centraliza las conversaciones de WhatsApp oficial (WABA), automatiza la atención inmediata con IA contextual y visualiza tu embudo en un tablero Kanban multiusuario.",
-    "highlights": [
-      {
-        "title": "Línea Oficial WhatsApp (WABA)",
-        "desc": "Conexión directa y profesional. Cero riesgos de bloqueo y soporte multiagente simultáneo."
-      },
-      {
-        "title": "Agente IA Contextual",
-        "desc": "Entrenado con tus manuales y catálogos. Resuelve dudas y supera objeciones en 200ms."
-      },
-      {
-        "title": "Tablero Kanban de Ventas",
-        "desc": "Visualiza el estado de cada oportunidad en tiempo real y asigna leads a tu equipo humano."
-      },
-      {
-        "title": "Control y Supervisión",
-        "desc": "Transición fluida a asesores cuando el lead está listo. Monitoreo estricto de consumo sin sorpresas."
-      }
     ]
   },
   "comparison": {
@@ -508,9 +484,8 @@
     "copyright": "© Todos los derechos reservados. Desarrollo Web de Alto Rendimiento & Sistemas con IA.",
     "links": [
       { "label": "La Empresa", "href": "#empresa" },
-      { "label": "Ecosistema CRM", "href": "#crm-ecosistema" },
-      { "label": "Soluciones", "href": "#servicios" },
       { "label": "Cómo funciona", "href": "#como-funciona" },
+      { "label": "Soluciones", "href": "#servicios" },
       { "label": "FAQ", "href": "#faq" },
       { "label": "Diagnóstico", "href": "#diagnostico" }
     ]

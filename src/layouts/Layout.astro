@@ -4,12 +4,63 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  canonical?: string;
+  ogImage?: string;
 }
 
 const {
-  title = "synqo.dev | Tu mejor vendedor ahora opera en la web 24/7",
-  description = "Desarrollamos páginas web de ultra alta velocidad construidas en código limpio e integradas con agentes de Inteligencia Artificial que captan, califican y convierten visitantes en clientes en tiempo real."
+  title = "synqo.dev | Desarrollo Web de Alto Rendimiento & Sistemas con IA",
+  description = "Desarrollo web de alto rendimiento potenciado con IA: convertimos visitantes en clientes mientras tú te enfocas en operar tu negocio.",
+  canonical = "https://synqo.dev/",
+  ogImage = "https://synqo.dev/og-image.png"
 } = Astro.props;
+
+const siteUrl = "https://synqo.dev";
+const fullOgImageUrl = ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`;
+
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://synqo.dev/#organization",
+      "name": "Synqo",
+      "legalName": "Synqo Dev",
+      "url": "https://synqo.dev",
+      "logo": "https://synqo.dev/branding/logo.png",
+      "image": "https://synqo.dev/og-image.png",
+      "slogan": "Syncing code, traffic and sales.",
+      "description": "Estudio de ingeniería de software especializado en desarrollo web de alto rendimiento y software CRM con agentes de Inteligencia Artificial.",
+      "sameAs": [
+        "https://synqo.dev"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://synqo.dev/#website",
+      "url": "https://synqo.dev",
+      "name": "synqo.dev",
+      "publisher": {
+        "@id": "https://synqo.dev/#organization"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://synqo.dev/#webpage",
+      "url": "https://synqo.dev/",
+      "name": title,
+      "isPartOf": {
+        "@id": "https://synqo.dev/#website"
+      },
+      "about": {
+        "@id": "https://synqo.dev/#organization"
+      },
+      "description": description,
+      "inLanguage": "es"
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -17,6 +68,11 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Canonical -->
+    <link rel="canonical" href={canonical} />
+
+    <!-- Favicons & App Icons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -26,26 +82,36 @@ const {
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#060913" />
+    <meta name="theme-color" content="#090A0F" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://synqo.dev/" />
+    <meta property="og:site_name" content="Synqo" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image" content={fullOgImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="synqo.dev - Desarrollo Web de Alto Rendimiento & Sistemas con IA" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://synqo.dev/" />
+    <meta property="twitter:url" content={canonical} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="/og-image.png" />
+    <meta property="twitter:image" content={fullOgImageUrl} />
+    <meta property="twitter:image:alt" content="synqo.dev - Desarrollo Web de Alto Rendimiento & Sistemas con IA" />
 
     <!-- Preconnect to Google Fonts for lightning fast font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
   </head>
   <body class="min-h-screen bg-[#060913] text-slate-100 antialiased selection:bg-[#0052FF] selection:text-white relative">
     <!-- Subtle top glow -->
@@ -57,4 +123,3 @@ const {
     <slot />
   </body>
 </html>
-

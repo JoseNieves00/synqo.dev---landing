@@ -1,16 +1,18 @@
 {
   "meta": {
-    "title": "synqo.dev | Ingeniería Web & Software CRM con IA 24/7",
-    "description": "Desarrollamos páginas web de ultra alta velocidad y Software CRM con Agentes de Inteligencia Artificial que captan, centralizan y convierten prospectos en tiempo real.",
-    "ogImage": "/og-image.png"
+    "title": "synqo.dev | Desarrollo Web de Alto Rendimiento & Sistemas con IA",
+    "description": "Desarrollo web de alto rendimiento potenciado con IA: convertimos visitantes en clientes mientras tú te enfocas en operar tu negocio.",
+    "ogImage": "/og-image.png",
+    "canonical": "https://synqo.dev/"
   },
   "brand": {
-    "name": "synqo.dev",
+    "name": "Synqo",
+    "domain": "synqo.dev",
     "logo": "/branding/logo-512w.png",
     "logoWebp": "/branding/logo.webp",
     "isotipo": "/branding/isotipo-256w.png",
     "isotipoWebp": "/branding/isotipo.webp",
-    "alt": "synqo.dev - Estudio de Ingeniería Web & Software CRM con IA"
+    "alt": "synqo.dev - Desarrollo Web de Alto Rendimiento & Sistemas con IA"
   },
   "nav": {
     "brand": {
@@ -29,44 +31,44 @@
       { "label": "Cómo funciona", "href": "#como-funciona" },
       { "label": "FAQ", "href": "#faq" }
     ],
-    "statusBadge": "SISTEMA: ONLINE 24/7",
+    "statusBadge": "STATUS: 24/7 ACTIVE",
     "cta": {
       "label": "Agendar Diagnóstico",
       "href": "#diagnostico"
     }
   },
   "hero": {
-    "eyebrow": "ESTUDIO DE INGENIERÍA WEB · SOFTWARE CRM · AGENTES IA",
-    "h1Prefix": "Tu infraestructura digital y tu equipo comercial,",
-    "h1Highlight": "sincronizados 24/7.",
-    "subtitle": "Creamos páginas web de ultra alta velocidad construidas en código limpio e implementamos nuestro Software CRM con Agentes de Inteligencia Artificial para captar, calificar y cerrar prospectos en tiempo real.",
+    "eyebrow": "DESARROLLO WEB DE ALTO RENDIMIENTO & SISTEMAS CON IA",
+    "h1Prefix": "Tu mejor vendedor",
+    "h1Highlight": "opera en la web 24/7.",
+    "subtitle": "Desarrollo web de alto rendimiento potenciado con IA: convertimos visitantes en clientes mientras tú te enfocas en operar tu negocio.",
     "primaryCta": {
-      "label": "Cotizar solución para mi empresa",
+      "label": "Cotizar mi proyecto",
       "href": "#diagnostico"
     },
     "secondaryCta": {
-      "label": "Explorar servicios y CRM",
-      "href": "#servicios"
+      "label": "Ver demo del sistema",
+      "href": "#como-funciona"
     },
     "performanceBadge": [
-      { "icon": "⚡", "text": "Webs en < 0.8s" },
-      { "icon": "🤖", "text": "Agente IA Nativo" },
-      { "icon": "📊", "text": "Software CRM Centralizado" },
-      { "icon": "🎯", "text": "Cero Fricción" }
+      { "icon": "⚡", "text": "<0.8s load time" },
+      { "icon": "🎯", "text": "Arquitectura Zero-Friction" },
+      { "icon": "🤖", "text": "Agente IA 24/7" },
+      { "icon": "📊", "text": "CRM & WhatsApp Oficial" }
     ]
   },
   "crmFeature": {
-    "eyebrow": "NUESTRO HIGH TICKET · SOFTWARE PROPIETARIO",
+    "eyebrow": "SOFTWARE CRM + IA · HIGH TICKET",
     "title": "Un CRM diseñado para que ningún lead se quede sin respuesta.",
     "subtitle": "Centraliza las conversaciones de WhatsApp oficial (WABA), automatiza la atención inmediata con IA contextual y visualiza tu embudo en un tablero Kanban multiusuario.",
     "highlights": [
       {
         "title": "Línea Oficial WhatsApp (WABA)",
-        "desc": "Conexión directa y profesional. Cero riesgos de baneo y soporte multiagente simultáneo."
+        "desc": "Conexión directa e institucional. Cero riesgos de bloqueo y soporte multiagente simultáneo."
       },
       {
         "title": "Agente IA Contextual",
-        "desc": "Entrenado con tus manuales y catálogos. Resuelve dudas y califica objeciones en 200ms."
+        "desc": "Entrenado con tus manuales y catálogos. Resuelve dudas y supera objeciones en 200ms."
       },
       {
         "title": "Tablero Kanban de Ventas",
@@ -82,37 +84,37 @@
     "eyebrow": "EL ESTÁNDAR DEL MERCADO VS. SYNQO",
     "title": "El caos comercial tradicional quedó en el pasado.",
     "subtitle": "La mayoría de empresas pierden prospectos por páginas lentas y chats de WhatsApp desordenados sin seguimiento.",
-    "traditionalHeader": "El Escenario Tradicional",
-    "synqoHeader": "El Ecosistema Synqo",
+    "traditionalHeader": "El Modelo Tradicional",
+    "synqoHeader": "El Estándar Synqo",
     "points": [
       {
         "traditional": {
-          "title": "Páginas lentas y formularios olvidados",
-          "desc": "Sitios web pesados que tardan más de 3 segundos en cargar y formularios donde los prospectos esperan horas una respuesta."
+          "title": "Plantillas lentas y formularios olvidados",
+          "desc": "Sitios pesados que tardan más de 3 segundos en cargar y prospectos que esperan horas o días por una respuesta."
         },
         "synqo": {
-          "title": "Webs ultrarrápidas de alta conversión",
-          "desc": "Código limpio en Astro sin plantillas sobrecargadas. Carga instantánea (< 0.8s) y arquitectura directa a la acción."
+          "title": "Código limpio y optimizado (<0.8s)",
+          "desc": "Carga instantánea en cualquier red o dispositivo móvil con Core Web Vitals en 100/100 y ruta directa a la acción."
         }
       },
       {
         "traditional": {
-          "title": "WhatsApp en teléfonos individuales",
-          "desc": "Leads repartidos en chats personales de asesores, sin trazabilidad de ventas, métricas ni respuestas fuera de horario laboral."
+          "title": "Páginas folleto estáticas",
+          "desc": "Llenas de texto que nadie lee, sin una ruta clara hacia la acción ni psicología de conversión."
         },
         "synqo": {
-          "title": "CRM centralizado con WhatsApp Oficial",
-          "desc": "Línea WABA con multiusuarios simultáneos, tablero Kanban para ver el avance de cada prospecto y control total de la empresa."
+          "title": "Arquitectura Zero-Friction",
+          "desc": "Estructura diseñada psicológicamente para guiar al visitante directo a cotizar o agendar."
         }
       },
       {
         "traditional": {
-          "title": "Atención tardía y pérdida de interés",
-          "desc": "El 70% de los prospectos le compra a la primera empresa que responde con precisión; demorarse 15 minutos enfría el lead."
+          "title": "WhatsApp disperso en teléfonos personales",
+          "desc": "Leads repartidos en chats sin control, demoras en atención manual y pérdida de trazabilidad comercial."
         },
         "synqo": {
-          "title": "Agente de IA entrenado 24/7",
-          "desc": "Atiende en 0.2 segundos las 24 horas, supera objeciones con la información de tu negocio y califica antes de pasar al equipo."
+          "title": "Agente IA 24/7 + CRM Centralizado",
+          "desc": "Atención en milisegundos con línea oficial WABA, calificación algorítmica y embudo Kanban para tu equipo."
         }
       }
     ]
@@ -127,9 +129,9 @@
         "step": "01",
         "title": "El Impacto Web (0.8s)",
         "badge": "INFRAESTRUCTURA",
-        "copy": "El usuario hace clic en tu anuncio o enlace y la landing page carga de forma instantánea. Cero rebote técnico.",
-        "details": "Optimizamos el LCP al extremo con servidores en red distribuida (CDN Vercel) y código optimizado sin scripts innecesarios.",
-        "metricValue": "< 0.8s",
+        "copy": "El usuario hace clic en tu anuncio o enlace y la landing page entra sin esperas. Cero rebote técnico.",
+        "details": "Optimizamos el LCP al extremo con servidores en red distribuida (CDN Vercel) y código limpio sin dependencias pesadas.",
+        "metricValue": "<0.8s load time",
         "metricLabel": "Tiempo de carga LCP",
         "previewType": "speed"
       },
@@ -138,7 +140,7 @@
         "step": "02",
         "title": "La Conversación IA (0.2s)",
         "badge": "AGENTE INTELIGENTE",
-        "copy": "El asistente conversacional responde al instante por WhatsApp o Web, resuelve dudas concretas y califica la intención de compra.",
+        "copy": "Tu agente entrenado responde al instante, resuelve dudas específicas con la información de tu negocio y supera objeciones.",
         "details": "Modelos LLM con memoria contextual entrenados con tus manuales de ventas, preguntas frecuentes y catálogos.",
         "chat": {
           "userQuery": "¿Tienen disponibilidad este jueves y qué precio tiene la consulta?",
@@ -166,33 +168,33 @@
     ]
   },
   "servicesCatalog": {
-    "eyebrow": "CATÁLOGO DE INGENIERÍA & SOFTWARE",
-    "title": "Soluciones diseñadas para cada etapa de tu negocio.",
-    "subtitle": "Elige el ecosistema completo o el módulo específico que tu operación necesita hoy para escalar.",
+    "eyebrow": "ARQUITECTURA DE SERVICIOS",
+    "title": "Soluciones de ingeniería para negocios en crecimiento.",
+    "subtitle": "Elige el ecosistema completo o el módulo específico que tu operación necesita para escalar con previsibilidad.",
     "categories": [
       {
         "id": "combos",
-        "label": "Combos Todo Incluido",
-        "badge": "MÁXIMO IMPACTO",
-        "tagline": "Landing Page de ultra velocidad + Software CRM + Agente de IA configurado nativamente."
+        "label": "Synqo Core (Sistema Integral)",
+        "badge": "RECOMENDADO",
+        "tagline": "La solución completa: Landing de conversión ultra rápida + Agente de IA activo + Integración con CRM, WhatsApp y calendarios."
       },
       {
         "id": "crm",
-        "label": "Software CRM + IA Solo",
+        "label": "Synqo AI Agents & CRM",
         "badge": "HIGH TICKET",
-        "tagline": "Para empresas con web o canales activos que necesitan centralizar leads y automatizar ventas."
+        "tagline": "Asistentes conversacionales inteligentes entrenados con el contexto del cliente para calificar prospectos, resolver dudas y agendar citas en tiempo real."
       },
       {
         "id": "web",
-        "label": "Desarrollo Web & Landings",
+        "label": "Synqo Web / Landings",
         "badge": "CÓDIGO LIMPIO",
-        "tagline": "Infraestructura web construida a medida, sin plantillas lentas ni constructores pesados."
+        "tagline": "Interfaces UI/UX a medida, desarrollo de alta velocidad en código limpio, arquitectura de persuasión y optimización técnica orientada a resultados."
       },
       {
         "id": "addons",
         "label": "Módulos & Escalabilidad",
         "badge": "FLEXIBLE",
-        "tagline": "Amplía usuarios, capacidad de IA o añade integraciones a medida según tu crecimiento."
+        "tagline": "Amplía usuarios, capacidad de procesamiento de IA e integraciones a medida según el crecimiento de tu operación."
       }
     ],
     "combos": [
@@ -361,37 +363,37 @@
     ]
   },
   "niches": {
-    "eyebrow": "CASOS DE USO",
+    "eyebrow": "PÚBLICO OBJETIVO & MERCADO CLAVE",
     "title": "Diseñado para industrias donde el tiempo de respuesta define la venta.",
-    "subtitle": "Si tu cliente necesita respuestas claras para tomar una decisión de compra, este sistema multiplica tus conversiones.",
+    "subtitle": "Si tu cliente necesita asesoría o respuestas rápidas para decidir su compra, este sistema multiplica tus conversiones.",
     "items": [
       {
-        "industry": "Salud y Estética",
-        "examples": "Clínicas odontológicas, dermatológicas y medicina especializada",
+        "industry": "Salud & Citas",
+        "examples": "Clínicas estéticas, dentales y médicos especialistas",
         "action": "Calificación previa y agendamiento 24/7",
         "metric": "85% menos inasistencias",
         "icon": "heart"
       },
       {
         "industry": "Servicios Profesionales",
-        "examples": "Despachos legales, consultores, bienes raíces y finanzas",
+        "examples": "Abogados, asesores, bienes raíces y finanzas",
         "action": "Calificación de prospectos de ticket alto",
         "metric": "Filtro 100% automático",
         "icon": "briefcase"
       },
       {
-        "industry": "Empresas de Servicios Locales",
+        "industry": "Comercio Consultivo",
+        "examples": "Marcas con asesoría previa requerida antes de venta",
+        "action": "Resolución de objeciones y cierre",
+        "metric": "+3.4x tasa de conversión",
+        "icon": "shopping"
+      },
+      {
+        "industry": "Servicios Técnicos & Locales",
         "examples": "Instalaciones, remodelaciones, arquitectura y eventos",
         "action": "Cotizaciones rápidas y filtrado en CRM",
         "metric": "Respuesta en < 1 segundo",
         "icon": "wrench"
-      },
-      {
-        "industry": "Comercio Consultivo",
-        "examples": "Productos de ticket medio/alto que requieren asesoría previa",
-        "action": "Resolución de objeciones y cierre",
-        "metric": "+3.4x tasa de conversión",
-        "icon": "shopping"
       }
     ]
   },
@@ -401,12 +403,12 @@
     "subtitle": "Todo lo que necesitas saber sobre nuestra arquitectura técnica, el CRM con IA y las modalidades de trabajo.",
     "items": [
       {
-        "q": "¿Por qué es mejor un Combo (Web + CRM) que contratar una web por un lado y un CRM por otro?",
+        "q": "¿Por qué es mejor Synqo Core (Sistema Integral) que contratar una web por un lado y un CRM por otro?",
         "a": "Cuando contratas por separado, sufres problemas de integración, caídas de tracking y dos proveedores culpándose entre sí. En Synqo entregamos el ecosistema completamente sincronizado: la web carga en 0.8s, los formularios conectan directo a la línea oficial de WhatsApp (WABA) y el CRM con IA gestiona los leads desde el primer día."
       },
       {
         "q": "¿Puedo contratar únicamente el Software CRM si ya tengo una página web?",
-        "a": "Sí. Nuestros planes de CRM + IA están pensados precisamente para empresas que ya cuentan con presencia digital o canales activos de tráfico y necesitan ordenar su proceso comercial, asignar asesores y automatizar respuestas 24/7 con Inteligencia Artificial."
+        "a": "Sí. Nuestros planes de Synqo AI Agents & CRM están pensados precisamente para empresas que ya cuentan con presencia digital o canales activos de tráfico y necesitan ordenar su proceso comercial, asignar asesores y automatizar respuestas 24/7 con Inteligencia Artificial."
       },
       {
         "q": "¿Cómo funciona la conexión con WhatsApp y qué requisitos tiene?",
@@ -422,14 +424,14 @@
       },
       {
         "q": "¿En cuánto tiempo se entrega el desarrollo o la implementación del CRM?",
-        "a": "Un despliegue de Landing Page se entrega entre 10 y 15 días hábiles. La puesta en marcha del Software CRM + IA toma de 7 a 12 días hábiles (Starter/Pro) o ~20 días para soluciones Enterprise. En los Combos avanzamos por fases para que tengas resultados tangibles desde el inicio."
+        "a": "Un despliegue de Landing Page se entrega entre 10 y 15 días hábiles. La puesta en marcha del Software CRM + IA toma de 7 a 12 días hábiles (Starter/Pro) o ~20 días para soluciones Enterprise. En Synqo Core avanzamos por fases para que tengas resultados tangibles desde el inicio."
       }
     ]
   },
   "contact": {
     "eyebrow": "DA EL SIGUIENTE PASO",
     "h2": "Diseñemos la solución ideal para tu empresa.",
-    "subtitle": "Cuéntanos sobre tu negocio, tus canales actuales y si buscas una Landing Page veloz, nuestro Software CRM con IA o el combo completo.",
+    "subtitle": "Cuéntanos sobre tu negocio, tus canales actuales y si buscas una Landing Page veloz, nuestro Software CRM con IA o el sistema integral.",
     "whatsappNumber": "573000000000",
     "fields": {
       "name": "Nombre / Empresa",
@@ -441,9 +443,9 @@
       "detailsPlaceholder": "Ej. Tenemos una clínica dental con 3 asesores. Nos interesa el Combo Pro Growth para mejorar la web y automatizar la calificación de leads en WhatsApp."
     },
     "serviceOptions": [
-      "Combo Todo Incluido (Web + CRM con IA)",
-      "Software CRM + Agente de IA (High Ticket)",
-      "Desarrollo Web & Landing Page a Medida",
+      "Synqo Core: Combo Todo Incluido (Web + CRM con IA)",
+      "Synqo AI Agents & CRM (High Ticket)",
+      "Synqo Web / Landing Page a Medida",
       "Asesoría para Solución Personalizada"
     ],
     "submitLabel": "Solicitar Diagnóstico Sin Costo",
@@ -464,8 +466,8 @@
       "isotipo": "/branding/isotipo-256w.png",
       "isotipoWebp": "/branding/isotipo.webp"
     },
-    "tagline": "Syncing code, traffic, CRM and sales.",
-    "copyright": "© Todos los derechos reservados. Ingeniería Web & Software CRM con IA.",
+    "tagline": "Syncing code, traffic and sales.",
+    "copyright": "© Todos los derechos reservados. Desarrollo Web de Alto Rendimiento & Sistemas con IA.",
     "links": [
       { "label": "Servicios & Planes", "href": "#servicios" },
       { "label": "Ecosistema CRM", "href": "#crm-ecosistema" },

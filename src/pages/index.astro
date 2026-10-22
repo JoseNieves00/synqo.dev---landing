@@ -15,7 +15,7 @@ import siteContent from '../data/siteContent.json';
 const { meta } = siteContent;
 ---
 
-<Layout title={meta.title} description={meta.description}>
+<Layout title={meta.title} description={meta.description} canonical={meta.canonical} ogImage={meta.ogImage}>
   <Navbar />
   <main>
     <Hero />

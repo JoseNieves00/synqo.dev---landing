@@ -51,7 +51,6 @@
       "href": "#empresa"
     },
     "performanceBadge": [
-      { "icon": "⚡", "text": "<0.8s load time" },
       { "icon": "🎯", "text": "Arquitectura Zero-Friction" },
       { "icon": "🤖", "text": "Agente IA Nativo 24/7" },
       { "icon": "📊", "text": "CRM & WhatsApp Oficial" }
@@ -88,7 +87,6 @@
       }
     ],
     "stats": [
-      { "value": "<0.8s", "label": "Tiempo de Carga LCP", "desc": "Velocidad extrema en móvil y escritorio" },
       { "value": "100%", "label": "Propiedad del Cliente", "desc": "Dominio, base de datos y código" },
       { "value": "WABA", "label": "API Oficial Meta", "desc": "Línea institucional sin riesgo de baneo" },
       { "value": "24/7", "label": "Disponibilidad Activa", "desc": "Atención comercial continua" }

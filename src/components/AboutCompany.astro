@@ -52,23 +52,21 @@ const { about } = siteContent;
       ))}
     </div>
 
-    <!-- Trust Banner / Company Credibility Bar -->
-    <div class="max-w-5xl mx-auto rounded-3xl bg-[#090e1c] border border-white/[0.08] p-6 sm:p-8 backdrop-blur-md">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
-        {about.stats.map((st, index) => (
-          <div class={`flex flex-col items-center justify-center text-center px-4 py-2 w-full ${index !== 0 ? 'md:border-l md:border-white/[0.08]' : ''}`}>
-            <span class="block text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-mono-code mb-1 text-gradient-cyan text-center">
-              {st.value}
-            </span>
-            <span class="block text-xs sm:text-sm font-semibold text-slate-200 mb-0.5 text-center">
-              {st.label}
-            </span>
-            <span class="block text-[11px] text-slate-400 font-mono-code text-center">
-              {st.desc}
-            </span>
-          </div>
-        ))}
-      </div>
+    <!-- Trust Stats: 4 Minimalist Metric Pods -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      {about.stats.map((st) => (
+        <div class="p-6 sm:p-7 rounded-2xl bg-[#090e1c]/90 border border-white/[0.08] hover:border-[#00F0FF]/30 transition-all duration-300 flex flex-col items-center justify-center text-center hover:-translate-y-0.5 shadow-sm">
+          <span class="text-3xl sm:text-4xl font-extrabold text-white font-mono-code mb-2 text-gradient-cyan tracking-tight">
+            {st.value}
+          </span>
+          <span class="text-sm font-semibold text-slate-200 mb-1">
+            {st.label}
+          </span>
+          <span class="text-xs text-slate-400 font-mono-code leading-relaxed">
+            {st.desc}
+          </span>
+        </div>
+      ))}
     </div>
 
   </div>

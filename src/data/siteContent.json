@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "synqo.dev | Desarrollo Web de Alto Rendimiento & Sistemas con IA",
+    "title": "synqo.dev | Estudio de Ingeniería Web & Software CRM con IA",
     "description": "Desarrollo web de alto rendimiento potenciado con IA: convertimos visitantes en clientes mientras tú te enfocas en operar tu negocio.",
     "ogImage": "/og-image.png",
     "canonical": "https://synqo.dev/"
@@ -12,7 +12,7 @@
     "logoWebp": "/branding/logo.webp",
     "isotipo": "/branding/isotipo-256w.png",
     "isotipoWebp": "/branding/isotipo.webp",
-    "alt": "synqo.dev - Desarrollo Web de Alto Rendimiento & Sistemas con IA"
+    "alt": "synqo.dev - Estudio de Ingeniería Web & Software CRM con IA"
   },
   "nav": {
     "brand": {
@@ -26,8 +26,9 @@
       "isotipoWebp": "/branding/isotipo.webp"
     },
     "links": [
-      { "label": "Servicios & Planes", "href": "#servicios" },
+      { "label": "La Empresa", "href": "#empresa" },
       { "label": "Ecosistema CRM", "href": "#crm-ecosistema" },
+      { "label": "Soluciones", "href": "#servicios" },
       { "label": "Cómo funciona", "href": "#como-funciona" },
       { "label": "FAQ", "href": "#faq" }
     ],
@@ -38,33 +39,70 @@
     }
   },
   "hero": {
-    "eyebrow": "DESARROLLO WEB DE ALTO RENDIMIENTO & SISTEMAS CON IA",
+    "eyebrow": "ESTUDIO DE INGENIERÍA DE SOFTWARE & SISTEMAS CON IA",
     "h1Prefix": "Tu mejor vendedor",
     "h1Highlight": "opera en la web 24/7.",
-    "subtitle": "Desarrollo web de alto rendimiento potenciado con IA: convertimos visitantes en clientes mientras tú te enfocas en operar tu negocio.",
+    "subtitle": "En Synqo diseñamos páginas web de ultra-alto rendimiento e implementamos sistemas CRM con agentes de Inteligencia Artificial. Sincronizamos código, tráfico y ventas mientras tú te enfocas en operar tu negocio.",
     "primaryCta": {
-      "label": "Cotizar mi proyecto",
+      "label": "Iniciar diagnóstico técnico",
       "href": "#diagnostico"
     },
     "secondaryCta": {
-      "label": "Ver demo del sistema",
-      "href": "#como-funciona"
+      "label": "Conocer la empresa",
+      "href": "#empresa"
     },
     "performanceBadge": [
       { "icon": "⚡", "text": "<0.8s load time" },
       { "icon": "🎯", "text": "Arquitectura Zero-Friction" },
-      { "icon": "🤖", "text": "Agente IA 24/7" },
+      { "icon": "🤖", "text": "Agente IA Nativo 24/7" },
       { "icon": "📊", "text": "CRM & WhatsApp Oficial" }
     ]
   },
+  "about": {
+    "eyebrow": "FILOSOFÍA DE INGENIERÍA · CONFIANZA & RIGOR",
+    "title": "Construimos activos digitales con rigor de ingeniería de software.",
+    "subtitle": "Synqo nace del concepto de sincronía (Sync): la armonización entre arquitectura web de alto rendimiento, sistemas de conversión y atención automatizada en milisegundos para empresas que valoran la estabilidad y los resultados.",
+    "pillars": [
+      {
+        "tag": "ARQUITECTURA",
+        "title": "Código Limpio, Cero Plantillas",
+        "desc": "No utilizamos constructores visuales pesados ni plantillas de terceros. Construimos en Astro y Tailwind para lograr velocidad extrema y Core Web Vitals en 100/100.",
+        "guarantee": "Carga ultra rápida <0.8s verificable"
+      },
+      {
+        "tag": "INTELIGENCIA",
+        "title": "IA Pragmática y Contextual",
+        "desc": "Desarrollamos asistentes conversacionales entrenados estrictamente con tus manuales de venta, catálogos y políticas, resolviendo dudas con fluidez humana sin inventar datos.",
+        "guarantee": "Respuestas instantáneas en <200ms"
+      },
+      {
+        "tag": "TRANSPARENCIA",
+        "title": "Propiedad Total de tus Activos",
+        "desc": "Tu dominio, código fuente, contenidos, base de datos y línea telefónica te pertenecen exclusivamente a ti. Cero cláusulas opacas ni dependencias forzosas.",
+        "guarantee": "100% control en manos de tu empresa"
+      },
+      {
+        "tag": "ESTABILIDAD",
+        "title": "Infraestructura & Meta Oficial",
+        "desc": "Conexión a través de la API oficial de WhatsApp Business (WABA) y despliegues en servidores distribuidos globalmente con CDN Vercel y monitoreo preventivo.",
+        "guarantee": "99.9% Uptime y soporte prioritario"
+      }
+    ],
+    "stats": [
+      { "value": "<0.8s", "label": "Tiempo de Carga LCP", "desc": "Velocidad extrema en móvil y escritorio" },
+      { "value": "100%", "label": "Propiedad del Cliente", "desc": "Dominio, base de datos y código" },
+      { "value": "WABA", "label": "API Oficial Meta", "desc": "Línea institucional sin riesgo de baneo" },
+      { "value": "24/7", "label": "Disponibilidad Activa", "desc": "Atención comercial continua" }
+    ]
+  },
   "crmFeature": {
-    "eyebrow": "SOFTWARE CRM + IA · HIGH TICKET",
+    "eyebrow": "TECNOLOGÍA PROPIETARIA · SOFTWARE CRM + IA",
     "title": "Un CRM diseñado para que ningún lead se quede sin respuesta.",
     "subtitle": "Centraliza las conversaciones de WhatsApp oficial (WABA), automatiza la atención inmediata con IA contextual y visualiza tu embudo en un tablero Kanban multiusuario.",
     "highlights": [
       {
         "title": "Línea Oficial WhatsApp (WABA)",
-        "desc": "Conexión directa e institucional. Cero riesgos de bloqueo y soporte multiagente simultáneo."
+        "desc": "Conexión directa y profesional. Cero riesgos de bloqueo y soporte multiagente simultáneo."
       },
       {
         "title": "Agente IA Contextual",
@@ -120,7 +158,7 @@
     ]
   },
   "demo": {
-    "eyebrow": "SHOW, DON'T TELL",
+    "eyebrow": "DEMOSTRACIÓN TÉCNICA · SHOW, DON'T TELL",
     "title": "Así opera tu sistema de conversión continuo.",
     "subtitle": "Un flujo perfectamente sincronizado desde el primer clic en la web hasta la gestión comercial en el CRM.",
     "steps": [
@@ -168,9 +206,9 @@
     ]
   },
   "servicesCatalog": {
-    "eyebrow": "ARQUITECTURA DE SERVICIOS",
-    "title": "Soluciones de ingeniería para negocios en crecimiento.",
-    "subtitle": "Elige el ecosistema completo o el módulo específico que tu operación necesita para escalar con previsibilidad.",
+    "eyebrow": "CAPACIDADES TÉCNICAS & SOLUCIONES",
+    "title": "Lo que construimos para potenciar tu empresa.",
+    "subtitle": "Desarrollamos soluciones a medida diseñadas para generar confianza institucional, estabilidad técnica y conversión comercial continua.",
     "categories": [
       {
         "id": "combos",
@@ -365,7 +403,7 @@
   "niches": {
     "eyebrow": "PÚBLICO OBJETIVO & MERCADO CLAVE",
     "title": "Diseñado para industrias donde el tiempo de respuesta define la venta.",
-    "subtitle": "Si tu cliente necesita asesoría o respuestas rápidas para decidir su compra, este sistema multiplica tus conversiones.",
+    "subtitle": "Si tu cliente necesita asesoría o respuestas rápidas para decidir su compra, nuestra tecnología multiplica tus conversiones.",
     "items": [
       {
         "industry": "Salud & Citas",
@@ -469,8 +507,9 @@
     "tagline": "Syncing code, traffic and sales.",
     "copyright": "© Todos los derechos reservados. Desarrollo Web de Alto Rendimiento & Sistemas con IA.",
     "links": [
-      { "label": "Servicios & Planes", "href": "#servicios" },
+      { "label": "La Empresa", "href": "#empresa" },
       { "label": "Ecosistema CRM", "href": "#crm-ecosistema" },
+      { "label": "Soluciones", "href": "#servicios" },
       { "label": "Cómo funciona", "href": "#como-funciona" },
       { "label": "FAQ", "href": "#faq" },
       { "label": "Diagnóstico", "href": "#diagnostico" }

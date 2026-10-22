@@ -1,43 +1,58 @@
-# Astro Starter Kit: Minimal
+# synqo.dev
 
-```sh
-npm create astro@latest -- --template minimal
-```
+> **Syncing code, traffic and sales.**  
+> Landing page corporativa de ultra-alto rendimiento para el estudio de ingeniería web y software CRM con Inteligencia Artificial.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## ⚡ Stack Tecnológico
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Framework**: [Astro 4](https://astro.build/) (Static Site Generation / Carga en <0.8s)
+- **Estilos**: [Tailwind CSS](https://tailwindcss.com/)
+- **Gestión de Contenido**: Centralizada en `src/data/siteContent.json`
+- **Integraciones**: WhatsApp Business API (WABA) para captación directa de leads
+
+---
+
+## 📂 Edición de Textos y Contenidos
+
+Todos los textos, enlaces, métricas, FAQs y datos de contacto se editan en un solo archivo:
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/data/siteContent.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Modificar un titular, un servicio o el número de WhatsApp no requiere tocar componentes ni código de maquetación.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🧱 Estructura de Secciones
 
-## 🧞 Commands
+1. **Header / Navbar**: Logo oficial, estado `STATUS: 24/7 ACTIVE` y menú móvil.
+2. **Hero**: Punchline comercial (`Tu mejor vendedor opera en la web 24/7.`) y métricas técnicas.
+3. **Sobre Synqo**: Filosofía de ingeniería (concepto *Sync*, código limpio y propiedad de activos).
+4. **Comparativa**: El modelo tradicional vs. el estándar Synqo.
+5. **Demo Interactiva**: Demostración en 3 pasos (Impacto Web ➔ Conversación IA ➔ Control en CRM).
+6. **Catálogo de Soluciones**: Selector por pestañas (Synqo Core, AI Agents & CRM, Web y Módulos).
+7. **Mercados Clave**: Casos de uso e industrias con alta tracción.
+8. **FAQ**: Preguntas frecuentes técnicas y comerciales.
+9. **Cierre / Contacto**: Formulario con derivación automática prellenada a WhatsApp.
+10. **Footer**: Identidad institucional y créditos.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🛠️ Comandos Rápidos
 
-## 👀 Want to learn more?
+```bash
+# Instalar dependencias
+npm install
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# Iniciar servidor de desarrollo local (http://localhost:4321)
+npm run dev
+
+# Compilar para producción (carpeta dist/)
+npm run build
+
+# Previsualizar el build de producción
+npm run preview
+```
